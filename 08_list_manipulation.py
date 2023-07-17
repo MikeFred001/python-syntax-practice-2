@@ -58,3 +58,5 @@ def list_manipulation(lst, command, location, value=None):
         elif location == "beginning":
             lst.insert(0,value)
             return lst
+
+        # by default if you don't pass element to pop it will default and return last item

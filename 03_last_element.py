@@ -12,7 +12,10 @@ def last_element(lst):
         >>> nums == [1, 2, 3]
         True
     """
+
     if len(lst) == 0:
         return None
     else:
         return lst[-1]
+
+    #empty list is falsy, can test this way
