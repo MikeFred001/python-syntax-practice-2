@@ -21,3 +21,6 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    joined_uppercase_phrase = phrase.upper().replace(" ", "")
+
+    return joined_uppercase_phrase[::-1] == joined_uppercase_phrase
