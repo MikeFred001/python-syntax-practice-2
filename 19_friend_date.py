@@ -20,4 +20,5 @@ def friend_date(a, b):
     set_friend_1 = set(a[2])
     set_friend_2 = set(b[2])
 
-    return True if (len(set_friend_1 & set_friend_2)) else False
+    return True if (set_friend_1 & set_friend_2) else False
+

@@ -31,26 +31,21 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
     if operation not in ["add", "subtract", "multiply", "divide"]:
         raise ValueError("Invalid Operation")
 
+    result = 0
 
     if operation == "add":
-        if make_int:
-            return f"{message} {int(a+b)}"
-        else:
-            return f"{message} {a+b}"
+        result = a + b
     if operation == "subtract":
-        if make_int:
-            return f"{message} {int(a-b)}"
-        else:
-            return f"{message} {a-b}"
+        result = a - b
     if operation == "multiply":
-        if make_int:
-            return f"{message} {int(a*b)}"
-        else:
-            return f"{message} {a*b}"
+        result = a * b
     if operation == "divide":
-        if make_int:
-            return f"{message} {a//b}"
-        else:
-            return f"{message} {a/b}"
+        result = a / b
+
+
+    if make_int:
+        return f"{message} {int(result)}"
+    else:
+        return f"{message} {result}"
 
 

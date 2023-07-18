@@ -20,13 +20,7 @@ def partition(lst, fn):
         [['hi', 'bye'], [None, 6]]
     """
 
-    truths = []
-    falses = []
-
-    for num in lst:
-        if fn(num):
-            truths.append(num)
-        else:
-            falses.append(num)
+    truths = [num for num in lst if fn(num)]
+    falses = [num for num in lst if not fn(num)]
 
     return [truths, falses]
