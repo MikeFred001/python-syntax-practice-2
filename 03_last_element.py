@@ -13,9 +13,7 @@ def last_element(lst):
         True
     """
 
-    if len(lst) == 0:
-        return None
-    else:
+    if lst:
         return lst[-1]
 
     #empty list is falsy, can test this way
